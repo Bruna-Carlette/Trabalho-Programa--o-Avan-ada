@@ -1,0 +1,21 @@
+<article class="panel panel-default" [ngStyle]="{backgroundColor : color, 'font-size.px': tam}" (click)="color = 'blue'"
+    (dblclick)="onMudaStyle()" (mouseenter)="color = 'pink'" (mouseleave)="color = 'gray'">
+    <div class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mensagem</th>
+                <th>Nome</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{messageVarClasse.content}}</td>
+                <td>{{messageVarClasseAlias.content}}</td>
+                <td>{{messageVarClasse.username}}</td>
+                <td>{{messageVarClasseAlias.username}}</td>
+            </tr>
+        </tbody>
+    </div>
+</article>
